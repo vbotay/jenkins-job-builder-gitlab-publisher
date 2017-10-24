@@ -18,13 +18,11 @@ but it doesn't provide to specify a build name to show on Gitlab
 
 * **name**(*optional*) - name of the build wich will be shown on GitLab
 
-Gitlab Message Example:
+Example:
 ```yaml
 publishers:
   - gilab-notifier:
       name: "My Jenkins Check"
-  - gitlab-vote
-  - gitlab-message
 ```
 
 ### Gitlab Vote
@@ -62,7 +60,7 @@ publishers:
       abort-note: true
       unstable-note: true
       success-note-text: "SUCCESS"
-      failure-note-text: "FAILURE
+      failure-note-text: "FAILURE"
       abort-note-text: "Job was aborted"
-      unstable-note-text: "Unstable build"      
+      unstable-note-text: "Unstable build"
 ```
