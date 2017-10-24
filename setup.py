@@ -11,7 +11,7 @@ setup(
     install_requires=[],
     entry_points={
         'jenkins_jobs.publishers': [
-            'gitlab-notifier = '
+            'gitlab-notifier-plugin = '
             'jenkins_jobs_gitlab_publisher.gitlab_publishers:gitlab_notifier',
             'gitlab-vote = '
             'jenkins_jobs_gitlab_publisher.gitlab_publishers:gitlab_vote',

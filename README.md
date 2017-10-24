@@ -21,8 +21,8 @@ but it doesn't provide to specify a build name to show on Gitlab
 Example:
 ```yaml
 publishers:
-  - gilab-notifier:
-      name: "My Jenkins Check"
+  - gilab-notifier-plugin:
+      build-name: "My Jenkins Check"
 ```
 
 ### Gitlab Vote
