@@ -19,7 +19,7 @@ setup(
             'jenkins_jobs_gitlab_publisher.gitlab_publishers:gitlab_message'
         ]
     },
-    packages=['jenkins_jobs_gitlab_publishers'],
+    packages=['jenkins_jobs_gitlab_publisher'],
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
