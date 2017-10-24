@@ -90,12 +90,12 @@ def gitlab_message(registry, xml_parent, data):
                ('unstable-note', 'replaceUnstableNote', False)]
 
     if data.get('success-note', False):
-        mapping.append(('succes-note-text', 'successNoteText', None))
+        mapping.append(('success-note-text', 'successNoteText', None))
     if data.get('failure-note', False):
-        mapping.append(('succes-note-text', 'failureNoteText', None))
+        mapping.append(('failure-note-text', 'failureNoteText', None))
     if data.get('abort-note', False):
-        mapping.append(('succes-note-text', 'abortNoteText', None))
+        mapping.append(('abort-note-text', 'abortNoteText', None))
     if data.get('unstable-note', False):
-        mapping.append(('succes-note-text', 'unstableNoteText', None))
+        mapping.append(('unstable-note-text', 'unstableNoteText', None))
 
     convert_mapping_to_xml(gitlab, data, mapping, fail_required=True)
